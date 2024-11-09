@@ -55,7 +55,7 @@ int main(){
     a->right = c;
     b->left = d;
     b->right = e;
-    // c->left = f;
+    c->left = f;
     c->right = g;
     display(a);
     cout<<endl;
