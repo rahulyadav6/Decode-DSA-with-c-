@@ -29,17 +29,17 @@ int main(){
     int n;
     cout<<"No of rows: ";
     cin>>n;
-    int nsp=0;
-    int nst=0;
+    int nsp=n-1;
+    int nst=1;
     for(int i=1; i<=n; i++){
-        nsp=n-i;
-        nst=2*i-1;
         for(int j=1; j<=nsp; j++){
             cout<<" ";
         }
+        nsp--;
         for(int k=1; k<=nst; k++){
             cout<<"*";
         }
+        nst+=2;
         cout<<endl;
     }
     return 0;
